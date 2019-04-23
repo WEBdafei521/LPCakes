@@ -1,0 +1,29 @@
+{
+  "name": "lpcakes",
+  "version": "1.0.0",
+  "description": "cake",
+  "main": "index.js",
+  "scripts": {
+    "test": "re"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WEBdafei521/lpcakes.git"
+  },
+  "keywords": [
+    "app"
+  ],
+  "author": "lp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WEBdafei521/lpcakes/issues"
+  },
+  "homepage": "https://github.com/WEBdafei521/lpcakes#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "mysql": "^2.17.1"
+  }
+}
