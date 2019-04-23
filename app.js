@@ -22,16 +22,16 @@ const session=require("express-session");
 //   }
 // }));
 server.use(express.static("public"));
-server.listen(3000);
+server.listen(5050);
 server.use(bodyParser.urlencoded({
     extended:false
 }));
 var pool=mysql.createPool({
-    host:'127.0.0.1',
-    port:3306,
-    user:'root',
-    password:'',
-    database:'Pcake'
+  host     : process.env.MYSQL_HOST,
+  port     : process.env.MYSQL_PORT,
+  user     : process.env.ACCESSKEY,
+  password : process.env.SECRETKEY,
+  database : 'app_' + process.env.APPNAME
 });
 // 用户注册
 server.post("/reg",(req,res)=>{

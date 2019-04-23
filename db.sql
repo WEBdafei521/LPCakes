@@ -1,9 +1,4 @@
-﻿mysql -uroot
-set names=utf8;
-drop database if exists Pcake;
-create database Pcake charset=UTF8;
-use Pcake;
-/*用户列表*/
+﻿/*用户列表*/
 create table user(
     id int primary key auto_increment,
     uname varchar(128),
