@@ -6,7 +6,6 @@ create table user(
     phone varchar(128),
     birth varchar(128)
 );
-
 /*轮播图*/
 create table index_banner(
     id int primary key auto_increment,
